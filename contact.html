@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Shakoor - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="path-to-your-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="color-scheme-buttons">
+        <button class="colour-scheme-btn" data-colour-scheme="default">Default Theme</button>
+        <button class="colour-scheme-btn" data-colour-scheme="dark">Dark Theme</button>
+        <button class="colour-scheme-btn" data-colour-scheme="light">Light Theme</button>
+    </div>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <h1>Contact Me</h1>
+        </div>
+    </header>
+    
+
+    
+   
+
+        <section id="contact-form-section">
+            <h2>Contact Form</h2>
+            <form id="contactForm" action="submit.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Please choose one</option>
+                        <option value="job_opportunity">Job Opportunity</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    <footer>
+            <div class="container text-center">
+                <p>&copy; 2024 Anas Shakoor. All Rights Reserved.</p>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
